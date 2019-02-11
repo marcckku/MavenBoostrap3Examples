@@ -1,0 +1,69 @@
+
+
+
+<%-- 
+    Document   : container-app
+    Created on : 27-gen-2019, 16.36.51
+    Author     : marco
+
+https://bootsnipp.com/snippets/deydP 
+
+http://www.sfondissimo.com/sfondi-animati-gif/ 
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+
+
+<style>
+
+    .container {
+        width: 1200px; /* disposizione elem */
+        position: relative;
+
+    }
+
+</style>
+
+
+
+<div> 
+    <div class="container" >
+        <div>
+            <!-- This is header  -->
+
+            <%@include file ="header.jsp" %>  
+        </div>
+
+
+        <div>
+            <!-- This is side bar sinistro -->
+
+            <%@include file ="container-sinistro.jsp" %>  
+
+        </div>
+
+        <div>
+            <!--  This is side bar destro -->
+            <%@include file ="container-destro.jsp" %>  
+
+        </div>
+
+        <div>
+            <!-- This is main content body!!! -->
+            <%@include file ="body.jsp" %>  
+
+        </div>
+
+
+        <div>
+            <!--  This is my footer -->
+            <%@include file ="footer.jsp" %>  
+        </div>           
+    </div>
+</div>
+
+
+
+
+index-app.jsp -> ocntiene la container-app.jsp
